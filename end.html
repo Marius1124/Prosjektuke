@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="end.css" />
+    <title>End Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Your Christmas Wishlist<br />has been created!</h1>
+    </header>
+    <section>
+      <h2>
+        To export your wishlist as a text<br />
+        file, simply click the TXT icon<br />
+        below
+      </h2>
+
+      <!-- Button -->
+      <div class="frame">
+        <button id="backToFrame1">Back to Frontpage</button>
+        <button id="TurnToTxt">
+          <img src="./Images/txt-file.png" alt="Text file icon" />
+        </button>
+      </div>
+    </section>
+
+    <script>
+      // Navigate back to Frontpage frame1
+      document
+        .getElementById("backToFrame1")
+        .addEventListener("click", function () {
+          window.location.href = "index.html#frame1";
+        });
+    </script>
+  </body>
+</html>

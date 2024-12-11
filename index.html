@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Christmas Wishlist</title>
+  </head>
+  <body>
+    <!-- frame1 referring to page1 the first visible page you arrive on -->
+    <section class="frame" id="frame1">
+      <header>
+        <div class="header-container">
+          <div class="christmas-tree-icon">
+            <img src="./Images/christmas-tree.png" alt="Christmas tree icon" />
+          </div>
+          <h1 class="frame1-heading">Christmas Wishlist</h1>
+        </div>
+      </header>
+
+      <!-- button to go to frame2 -->
+      <button class="toFrame2" id="goToFrame2">Create your wishlist »</button>
+
+      <!-- start of h2, middle-rectangle, inner-rectangle and h3 -->
+      <section class="features">
+        <div class="middle-rectangle">
+          <h2 class="middle-header">Why choose our Christmas Wishlist?</h2>
+          <div class="inner-rectangle">
+            <h3>Export to .txt</h3>
+            <p>
+              Export your wishlist to a<br />
+              downloadable text file that<br />
+              you can send to others
+            </p>
+          </div>
+          <div class="inner-rectangle">
+            <h3>Price total</h3>
+            <p>
+              Get the total price of your<br />
+              wishlist by adding the<br />
+              price of your products
+            </p>
+          </div>
+          <div class="inner-rectangle">
+            <h3>Design</h3>
+            <p>
+              Easy to use design with<br />
+              a way to actively calculate<br />
+              cost and export your<br />
+              wishlist to send to others
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- this is the start of frame2 -->
+    <section class="frame hidden" id="frame2">
+      <div class="content">
+        <header>
+          <h1 class="frame2-heading">Wishlist</h1>
+        </header>
+        <button class="toFrame1" id="goToFrame1">Back to Frame1</button>
+        <button class="toEnd" id="goToEndPage">Go to End</button>
+      </div>
+      <div class="wishlist">
+        <h2>Testing</h2>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disables scrolling */
+}
+
+.header-container {
+  width: 100%;
+  height: 50px;
+  background: #750000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures that header is above other content */
+}
+
+.frame1-heading {
+  margin: 0;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.christmas-tree-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.christmas-tree-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f0f0;
+  position: absolute;
+  left: 0;
+  transition: opacity 0.5s ease;
+}
+
+#frame1 {
+  background-image: url("./Images/mike-cox-3UQybRpwpso-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#frame2 {
+  background-image: url("./Images/isaac-martin-7M_Q0DYcI08-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.frame:not(.hidden) {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toFrame2 {
+  width: 350px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #e80101;
+  border: 7px solid #d90000;
+  border-radius: 10px;
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c20d0d;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 600px 0 160px 0;
+}
+
+.middle-header {
+  font-size: 32px;
+  color: #000000;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 5px;
+}
+
+.middle-rectangle {
+  width: 100%;
+  max-width: 100%;
+  top: 60vh;
+  margin: 0;
+  height: 265px;
+  background: rgba(217, 217, 217, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.inner-rectangle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
+  width: 275px;
+  height: 155px;
+  background: #d9d9d9;
+}
+
+.inner-rectangle h3 {
+  font-size: 32px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inner-rectangle p {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
+  background: #d9d9d9;
+}
+
+/* This marks the end of the majority of Frame1 */
+/* Everything below here will mostly regard Frame2 */
+
+.frame2-heading {
+  color: #ec0101;
+  font-family: sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  backdrop-filter: blur(1px);
+  text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff,
+    -2px -2px 2px #fff;
+  position: absolute;
+  left: 216px;
+  top: 0;
+}
+
+.wishlist {
+  width: 615px;
+  height: 800px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border-color: #d8d7d7;
+  background: #c3907d;
+  left: 0;
+}
