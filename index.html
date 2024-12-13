@@ -57,15 +57,34 @@
 
     <!-- this is the start of frame2 -->
     <section class="frame hidden" id="frame2">
+      <header class="frame2-heading">
+        <h1>Wishlist</h1>
+      </header>
       <div class="content">
-        <header>
-          <h1 class="frame2-heading">Wishlist</h1>
-        </header>
-        <button class="toFrame1" id="goToFrame1">Back to Frame1</button>
-        <button class="toEnd" id="goToEndPage">Go to End</button>
+        <button class="toFrame1" id="goToFrame1">
+          <img src="./Images/home.png" alt="Home icon" />
+        </button>
+        <button class="toEnd" id="goToEndPage">Create Wishlist »</button>
       </div>
-      <div class="wishlist">
-        <h2>Testing</h2>
+      <div class="wishlist-rectangle">
+        <div class="wishlist-container">
+          <!-- Input Section -->
+          <div class="input-section">
+            <input type="text" id="itemName" placeholder="Enter item name" />
+            <input
+              type="number"
+              id="itemPrice"
+              placeholder="Enter price (optional)"
+            />
+            <button id="addItem">Add Item</button>
+          </div>
+
+          <ul id="wishlist"></ul>
+
+          <div class="total-price">
+            <h3>Total: kr <span id="total">0.00</span></h3>
+          </div>
+        </div>
       </div>
     </section>
   </body>

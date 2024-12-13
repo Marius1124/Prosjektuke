@@ -100,8 +100,9 @@ body {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #c20d0d;
+button {
+  background-color: transparent;
+  border: none;
 }
 
 .features {
@@ -167,24 +168,114 @@ button:hover {
 .frame2-heading {
   color: #ec0101;
   font-family: sans-serif;
-  font-size: 96px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   backdrop-filter: blur(1px);
   text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff,
     -2px -2px 2px #fff;
-  position: absolute;
-  left: 216px;
-  top: 0;
+  position: relative;
+  bottom: 400px;
+  left: 250px;
 }
 
-.wishlist {
-  width: 615px;
+/* Buttons outside of Wishlist toFrame1 and toEnd */
+.content {
+  position: relative;
+  left: 500px;
+}
+
+.toEnd {
+  color: #fff;
+  text-shadow: 0px 4px 4px #000;
+  font-family: sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 10px;
+  border: 10px solid #d90000;
+  background: #e80101;
+}
+
+.toFrame1 img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Wishlist specific entries */
+.wishlist-rectangle {
+  width: 715px;
   height: 800px;
   flex-shrink: 0;
   border-radius: 15px;
   border-color: #d8d7d7;
   background: #c3907d;
-  left: 0;
+  position: relative;
+  right: 800px;
+  top: 50px;
+  padding: 50px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.input-section button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #218838;
+}
+
+#wishlist {
+  list-style-type: none;
+  padding: 0;
+}
+
+#wishlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#wishlist li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#wishlist li button:hover {
+  background-color: #c82333;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }

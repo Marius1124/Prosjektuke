@@ -80,15 +80,20 @@ button {
   border: none;
 }
 
-#TurnToTxt img {
+#downloadWishlist img {
   width: 96px;
   height: 96px;
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin-left: 150px;
 }
 
-#backToFrame1 {
-  margin-right: auto;
-  background-color: white;
+#backToFrame1 img {
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 150px;
 }

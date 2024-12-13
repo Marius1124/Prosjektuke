@@ -20,8 +20,10 @@
 
       <!-- Button -->
       <div class="frame">
-        <button id="backToFrame1">Back to Frontpage</button>
-        <button id="TurnToTxt">
+        <button id="backToFrame1">
+          <img src="./Images/home.png" alt="Home icon" />
+        </button>
+        <button id="downloadWishlist">
           <img src="./Images/txt-file.png" alt="Text file icon" />
         </button>
       </div>
@@ -33,6 +35,27 @@
         .getElementById("backToFrame1")
         .addEventListener("click", function () {
           window.location.href = "index.html#frame1";
+        });
+
+      // Underneath here is everything that handles the .txt part
+      const wishlistData =
+        localStorage.getItem("wishlistData") || "Your wishlist is empty.";
+
+      document
+        .getElementById("downloadWishlist")
+        .addEventListener("click", function () {
+          const blob = new Blob([wishlistData], { type: "text/plain" });
+          const url = URL.createObjectURL(blob);
+
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "wishlist.txt";
+          document.body.appendChild(a);
+          a.click();
+
+          // Clean up
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
         });
     </script>
   </body>
